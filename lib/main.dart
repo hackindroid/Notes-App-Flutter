@@ -41,7 +41,7 @@ class NotesPage extends StatelessWidget {
       appBar: new AppBar(
         title: new Text(title),
         actions: <Widget>[
-          new IconButton(icon: new Icon(Icons.save), tooltip: 'Save Note',onPressed: _save),
+          new IconButton(icon: new Icon(Icons.save), tooltip: 'Save Note', onPressed: _save),
         ],
       ),
       body:
