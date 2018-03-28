@@ -37,8 +37,16 @@ class NotesPage extends StatelessWidget {
       appBar: new AppBar(
         title: new Text(title),
       ),
-      body: new Center(
-        child: new Text(title),
+      body:
+      new Center(
+        child: new Column(
+          children:[
+            new TextField(
+
+            ),
+            new TextField()
+          ]
+        ),
       ),
     );
   }
