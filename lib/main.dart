@@ -57,8 +57,6 @@ class NotesPage extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-
-  final _noteList = <Note>[];
   MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
@@ -69,6 +67,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  final _noteList = <Note>[];
   void _addNotesScreen() {
     Navigator.of(context).pushNamed('/addNotes');
   }
