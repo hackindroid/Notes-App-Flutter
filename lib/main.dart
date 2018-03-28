@@ -65,7 +65,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   void _addNotesScreen() {
-    Navigator.of(context).pushNamed('/addNotes')
+    Navigator.of(context).pushNamed('/addNotes');
   }
 
   @override
