@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
         // counter didn't reset back to zero; the application is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      home: new MyHomePage(title: 'Flutter Notes'),
       routes: <String, WidgetBuilder>{
-        '/addNotes': (BuildContext context) => new NotesPage(title: 'page A'),
+        '/addNotes': (BuildContext context) => new NotesPage(title: 'Take Note'),
       },
     );
   }
@@ -31,11 +31,18 @@ class NotesPage extends StatelessWidget {
   final String title;
   NotesPage({this.title});
 
+  void _save() {
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(title),
+        actions: <Widget>[
+          new IconButton(icon: new Icon(Icons.save), tooltip: 'Save Note',onPressed: _save),
+        ],
       ),
       body:
       new Center(
